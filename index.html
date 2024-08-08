@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaporama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- slides -->
+        <div class="slide slide1 active"></div>
+        <div class="slide slide2 cacher"></div>
+        <div class="slide slide3 cacher"></div>
+        <!-- fleches -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(+1)">&#10095;</a>
+    </div>
+    <!-- boutons -->
+    <div class="radio-buttons">
+        <input type="radio" name="slide" id="radio1" onclick="setCurrentSlide(1)" checked>
+        <input type="radio" name="slide" id="radio2" onclick="setCurrentSlide(2)">
+        <input type="radio" name="slide" id="radio3" onclick="setCurrentSlide(3)">
+    </div>
+
+    <script src="main.js" defer ></script>
+</body>
+</html>
